@@ -2,18 +2,18 @@
    require_once('./dbconnector.php');
    if (isset($_POST['them'])) {
         //them
-    $name=$_POST['fullname'];
-    $job=$_POST['age'];
-    $address=$_POST['phone'];
-    $salary=$_POST['email'];
-    $sql="Insert Into staff1 (fullname, age, phone, email) values('".$fullname."','".$age."','".$phone."','".$email."')";
+    $name=$_POST['Name'];
+    $job=$_POST['Age'];
+    $address=$_POST['Phone'];
+    $salary=$_POST['Email'];
+    $sql="Insert Into customer (Name, Age, Phone, Email) values('".$Name."','".$Age."','".$Phone."','".$Email."')";
     $cn = new DBConnector();
     $return = $cn->execStatement($sql);
     header('location:index.php');
     } 
     else{
-    $id=$_GET['id'];
-    $sql="DELETE FROM staff1 WHERE id = $id";
+    $ID=$_GET['ID'];
+    $sql="DELETE FROM customer WHERE ID = $ID";
     $cn = new DBConnector();
     $return = $cn->execStatement($sql);    
     header('location:index.php'); 

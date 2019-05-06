@@ -85,7 +85,7 @@
           <table class="table table-bordered">
             <thead>
               <tr>
-                <th>FullName</th>
+                <th>Name</th>
                 <th>Age</th>
                 <th>Phone</th>
                 <th>Email</th>

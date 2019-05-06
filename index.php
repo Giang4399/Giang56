@@ -59,19 +59,19 @@
           <form action="hanlde.php" method="post" enctype="MULTIPLE/form-data">
             <div class="form-group">
               <label for="email">Full Name:</label>
-              <input type="text" name="fullname" class="form-control" value="">
+              <input type="text" name="Name" class="form-control" value="">
             </div>
             <div class="form-group">
               <label for="pwd">Age:</label>
-              <td><input type="text" name="age" class="form-control" value=""></td>
+              <td><input type="text" name="Age" class="form-control" value=""></td>
             </div>
             <div class="form-group">
               <label for="pwd">Phone:</label>
-              <td><input type="text" name="phone" class="form-control" value=""></td>
+              <td><input type="text" name="Phone" class="form-control" value=""></td>
             </div>
             <div class="form-group">
               <label for="pwd">Email:</label>
-              <td><input type="text" name="email" class="form-control" value=""></td>
+              <td><input type="text" name="Email" class="form-control" value=""></td>
             </div>
               <input type="submit" class="btn btn-info" name="them" id="them" value="Add">
             </form>
@@ -101,10 +101,10 @@
                   foreach ($rows as $r) {
                   ?>  
               <tr>
-                <td><?=$r['fullname']?></td>
-                <td><?=$r['age']?></td>
-                <td><?=$r['phone']?></td>
-                <td><?=$r['email']?></td>
+                <td><?=$r['Name']?></td>
+                <td><?=$r['Age']?></td>
+                <td><?=$r['Phone']?></td>
+                <td><?=$r['Email']?></td>
                 <td>
                   <a href="hanlde.php?id=<?=$r['id']?>" class="btn btn-success" role="button" >
                   DELETE

@@ -58,7 +58,7 @@
         <div class="panel-body" >     
           <form action="handling.php" method="post" enctype="MULTIPLE/form-data">
             <div class="form-group">
-              <label for="email">FullName:</label>
+              <label for="email">Full Name:</label>
               <input type="text" name="fullname" class="form-control" value="">
             </div>
             <div class="form-group">

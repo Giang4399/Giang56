@@ -56,7 +56,7 @@
       <div class="panel panel-success">
         <div class="panel-heading">Customer Edit</div>
         <div class="panel-body" >     
-          <form action="handling.php" method="post" enctype="MULTIPLE/form-data">
+          <form action="hanlde.php" method="post" enctype="MULTIPLE/form-data">
             <div class="form-group">
               <label for="email">Full Name:</label>
               <input type="text" name="fullname" class="form-control" value="">

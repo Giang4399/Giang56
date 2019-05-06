@@ -106,7 +106,7 @@
                 <td><?=$r['phone']?></td>
                 <td><?=$r['email']?></td>
                 <td>
-                  <a href="handling.php?id=<?=$r['id']?>" class="btn btn-success" role="button" >
+                  <a href="hanlde.php?id=<?=$r['id']?>" class="btn btn-success" role="button" >
                   DELETE
                   </a>
 

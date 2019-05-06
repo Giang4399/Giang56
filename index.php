@@ -96,7 +96,7 @@
                   <?php
                   require_once('./dbconnector.php');
                   $cn = new DBConnector();
-                  $sql="Select * from staff1";
+                  $sql="Select * from customer";
                   $rows = $cn->runQuery($sql) or die ("");
                   foreach ($rows as $r) {
                   ?>  

@@ -4,7 +4,7 @@ class DBconnector{
     var $username = "xuqieqxlgdfwvz";
     var $password = "5c03f5021f8bcb4b59c00e260f27722574c3509750bffa286796ac602635a883";
     var $dbname = "dbpar43msqr860";
-    var $port = "5422";
+    var $port = "5432";
     var $conn;
            public function runQuery($sql)
            {

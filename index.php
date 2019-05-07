@@ -12,23 +12,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <style>
-    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    
     .row.content {height: 1500px}
     
-    /* Set gray background color and 100% height */
+    
     .sidenav {
       background-color: #f1f1f1;
       height: 100%;
     }
     
-    /* Set black background color, white text and some padding */
+    
     footer {
       background-color: #555;
       color: white;
       padding: 15px;
     }
     
-    /* On small screens, set height to 'auto' for sidenav and grid */
+    
     @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
@@ -57,23 +57,27 @@
         <div class="panel-heading">Customer Edit</div>
         <div class="panel-body" >     
           <form action="hanlde.php" method="post" enctype="MULTIPLE/form-data">
-            <div class="form-group">
-              <label for="email">Full Name:</label>
-              <input type="text" name="Name" class="form-control" value="">
+          	<div class="form-group">
+              <label for="ID">ID:</label>
+              <input type="text" name="ID" class="form-control">
             </div>
             <div class="form-group">
-              <label for="pwd">Age:</label>
-              <td><input type="text" name="Age" class="form-control" value=""></td>
+              <label for="Name">Full Name:</label>
+              <input type="text" name="Name" class="form-control">
             </div>
             <div class="form-group">
-              <label for="pwd">Phone:</label>
-              <td><input type="text" name="Phone" class="form-control" value=""></td>
+              <label for="Age">Age:</label>
+              <td><input type="text" name="Age" class="form-control"></td>
             </div>
             <div class="form-group">
-              <label for="pwd">Email:</label>
-              <td><input type="text" name="Email" class="form-control" value=""></td>
+              <label for="Phone">Phone:</label>
+              <td><input type="text" name="Phone" class="form-control"></td>
             </div>
-              <input type="submit" class="btn btn-info" name="them" id="them" value="Add">
+            <div class="form-group">
+              <label for="Email">Email:</label>
+              <td><input type="text" name="Email" class="form-control"></td>
+            </div>
+              <input type="submit" class="btn btn-info" name="them" id="them">
             </form>
         </div>
       </div>
@@ -85,6 +89,7 @@
           <table class="table table-bordered">
             <thead>
               <tr>
+              	<th>ID</th>
                 <th>Name</th>
                 <th>Age</th>
                 <th>Phone</th>
@@ -101,6 +106,7 @@
                   foreach ($rows as $r) {
                   ?>  
               <tr>
+              	<td><?=$r['ID']?></td>
                 <td><?=$r['Name']?></td>
                 <td><?=$r['Age']?></td>
                 <td><?=$r['Phone']?></td>
